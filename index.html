@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Bullet Point Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>✨ AI Resume Bullet Generator</h1>
+        <p>Enter your raw experience below:</p>
+        <textarea id="rawExperience" placeholder="e.g. I created a frontend using React and Firebase."></textarea>
+        <button onclick="generateSample()">Generate</button>
+        <h2>Generated Resume Bullet Point:</h2>
+        <div id="output" class="output-box"></div>
+    </div>
+    <script>
+        function generateSample() {
+            const input = document.getElementById('rawExperience').value;
+            if (!input.trim()) {
+                document.getElementById('output').innerText = '❗ Please enter your experience.';
+                return;
+            }
+            // Sample output logic (replace with API call if backend is available)
+            document.getElementById('output').innerText = `Developed a responsive frontend using React and integrated Firebase for real-time data management, enhancing user experience and application performance.`;
+        }
+    </script>
+</body>
+</html>
