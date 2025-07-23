@@ -21,3 +21,14 @@ This is an AI-powered tool that converts raw work/college experiences into profe
 
 🔗 Live Link: https://resumebulletpointgenerator.netlify.app
 
+✅ 1. Create Your .env File
+.env
+And inside .env, add your Gemini API key like this:
+
+.env
+GOOGLE_API_KEY=your_gemini_api_key_here
+🛑 Never share this key publicly or commit it to GitHub.
+
+✅ 2.change the Gemini Model:
+At line No:15
+In the resumebulletgenerator.py
